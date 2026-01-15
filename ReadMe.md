@@ -1,4 +1,4 @@
-# Staff Detection & Tracking System (员工检测与追踪系统)
+# Human Detection & Tracking System (人物检测与追踪系统)
 
 这是一个基于深度学习的计算机视觉项目，旨在自动识别并追踪视频监控中佩戴名牌的员工。该系统结合了 **YOLO** (用于目标检测) 和 **Kalman Filter / SORT** (用于目标追踪) 技术，即使在检测暂时丢失的情况下也能通过预测算法保持对目标的持续跟踪。
 
