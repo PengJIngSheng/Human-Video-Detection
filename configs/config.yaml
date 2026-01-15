@@ -1,0 +1,14 @@
+system:
+  device: "cuda"  # auto, cuda, mps, cpu
+  log_level: "INFO"
+
+data:
+  input_path: "data/input/sample.mp4"
+  output_dir: "data/output"
+  save_video: True
+
+model:
+  weights_path: "yolov13x.pt"
+  conf_threshold: 0.5
+  iou_threshold: 0.45
+  target_class_ids: [0]

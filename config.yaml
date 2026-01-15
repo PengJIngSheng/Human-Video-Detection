@@ -1,0 +1,42 @@
+# Model settings
+model:
+  weights: "staff_project/yolov13_finetune/weights/best.pt"
+  device: "cuda"
+  half: true
+
+# Detection settings
+detection:
+  conf_threshold: 0.05
+  iou_threshold: 0.45
+  classes: null
+  agnostic_nms: false
+  max_det: 100
+
+# Tracking settings
+tracking:
+  enabled: true
+  track_thresh: 0.3
+  track_buffer: 60
+  match_thresh: 0.3
+
+# Video processing
+video:
+  skip_frames: 0
+  resize: null
+
+# Output settings
+output:
+  save_video: true
+  save_json: true
+  save_frames: false
+  draw_bbox: true
+  draw_track: true
+  draw_confidence: true
+  bbox_color: [0, 255, 0]
+  bbox_thickness: 2
+  font_scale: 0.6
+
+# Paths
+paths:
+  input: "data/input"
+  output: "data/output"

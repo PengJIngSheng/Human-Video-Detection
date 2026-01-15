@@ -1,0 +1,5 @@
+path: .
+train: C:/Users/mier3/OneDrive/Desktop/PythonProject/data/dataset/images/train
+val: C:/Users/mier3/OneDrive/Desktop/PythonProject/data/dataset/images/val
+nc: 1
+names: ['Staff']
