@@ -13,8 +13,6 @@
 
 ## 📂 项目结构
 
-Plaintext
-
 ```
 .
 ├── config.yaml              # 核心配置文件 (模型路径、阈值、追踪参数)
@@ -67,12 +65,10 @@ pip install ultralytics opencv-python numpy tqdm pyyaml filterpy scipy
 
 2. 运行提取脚本：
 
-   Bash
-
    ```
-   python extract_frames.py
+python extract_frames.py
    ```
-
+   
    *这会在 `data/dataset/images/` 下生成训练集和验证集图片。*
 
 3. 使用 **LabelImg** 工具对图片进行标注：
@@ -125,5 +121,10 @@ pip install ultralytics opencv-python numpy tqdm pyyaml filterpy scipy
    - 绿色框：表示检测到的员工。
    - ID 标签：表示每个员工的唯一身份编号。
    - *注：即使某些帧检测器漏检，绿框也会根据预测算法平滑补齐。*
-2. **`detection_results.json`**:
+
+![](result1.bmp)
+
+![](result2.bmp)
+
+1. **`detection_results.json`**:
    - 包含每一帧的详细数据：是否有人、员工数量、坐标位置 (BBox center)、置信度等。
