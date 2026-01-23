@@ -18,7 +18,7 @@ def extract_frames():
     frame_count = 0
     saved_count = 0
 
-    print(f"开始从 {VIDEO_PATH} 提取图片...")
+    print(f"开始从 {VIDEO_PATH} 提取图片")
 
     while True:
         ret, frame = cap.read()
